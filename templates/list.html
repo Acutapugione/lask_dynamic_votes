@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% from '__macro.html' import show_students   %}
+    {{show_students(items)}}
+    {{show_students(items, item_name_tag='div')}}
+    
+{% endblock %}
+
+
