@@ -1,5 +1,9 @@
+# -*- coding=utf-8 -*-
 import random
-from json import dump, load
+from json import (
+    load,
+    # dump,
+)
 from typing import final
 from flask import Flask, render_template
 
