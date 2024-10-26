@@ -21,13 +21,17 @@
                     
                         {% else %}
                         <li>
-                            <li><a class="dropdown-item" href="{{ url_for(item) }}">{{item}}</a></li>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="{{ url_for(item) }}">{{item|title}}</a></li>
                         </li>
                         {% endif %}
                         {% endfor %}
+                        {# 
+                            
+                       
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li> 
+                         #}
                     </ul>
                 </li>
             </ul>
